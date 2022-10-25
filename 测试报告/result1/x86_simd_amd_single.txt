@@ -1,0 +1,191 @@
+[liu@localhost test]$ 
+[liu@localhost test]$ ./run_bench_single.sh ../
+build/               cmake/               examples/            libhs.pc.in          sqlite3/             tools/               
+CHANGELOG.md         CMakeLists.txt       hs.def               LICENSE              src/                 .travis.yml          
+chimera/             COPYING              hs_runtime.def       pcre/                test/                unit/                
+.clang-format        doc/                 include/             README.md            ThirdPartyNotice.md  util/                
+[liu@localhost test]$ ./run_bench_single.sh ../../
+.git/      hyperscan/ README.md  
+[liu@localhost test]$ ./run_bench_single.sh ../../../
+cmake-3.3.2/             common/                  hsbench-samples.tar.bz2  pcre/                    README                   x86/
+cmake-3.3.2.tar.gz       corpora/                 huawei/                  proj/                    run_bench.sh             
+[liu@localhost test]$ ./run_bench_single.sh ../../../common/hsbench 
+\n*** Snort literals against alexa200 text, block mode.\n
+Signatures:        pcre/snort_literals
+Hyperscan info:    Version: 5.3.0 Features:  Mode: BLOCK
+Expression count:  3,116
+Bytecode size:     923,512 bytes
+Database CRC:      0xf7bc0d1c
+Scratch size:      5,545 bytes
+Compile time:      0.132 seconds
+Peak heap usage:   199,077,888 bytes
+
+^C
+[liu@localhost test]$ 
+[liu@localhost test]$ 
+[liu@localhost test]$ ./run_bench_single.sh ../../../x86/hsbench 
+\n*** Snort literals against alexa200 text, block mode.\n
+Signatures:        pcre/snort_literals
+Hyperscan info:    Version: 5.3.0 Features:  Mode: BLOCK
+Expression count:  3,116
+Bytecode size:     923,512 bytes
+Database CRC:      0xf7bc0d1c
+Scratch size:      5,545 bytes
+Compile time:      0.131 seconds
+Peak heap usage:   199,077,888 bytes
+
+Time spent scanning:       7.759 seconds
+Corpus size:               177,087,567 bytes (130,957 blocks)
+Matches per iteration:     637,380 (3.686 matches/kilobyte)
+Overall block rate:        337,575.50 blocks/sec
+Mean throughput (overall): 3,651.91 Mbit/sec
+Max throughput (per core): 3,756.10 Mbit/sec
+
+\n*** Snort literals against Gutenberg text, block mode.\n
+Signatures:        pcre/snort_literals
+Hyperscan info:    Version: 5.3.0 Features:  Mode: BLOCK
+Expression count:  3,116
+Bytecode size:     923,512 bytes
+Database CRC:      0xf7bc0d1c
+Scratch size:      5,545 bytes
+Compile time:      0.183 seconds
+Peak heap usage:   23,420,928 bytes
+
+Time spent scanning:       0.286 seconds
+Corpus size:               6,701,044 bytes (3,280 blocks)
+Matches per iteration:     4,302 (0.657 matches/kilobyte)
+Overall block rate:        229,017.98 blocks/sec
+Mean throughput (overall): 3,743.07 Mbit/sec
+Max throughput (per core): 4,532.78 Mbit/sec
+
+
+\n*** Snort literals against news text, block mode.\n
+Signatures:        pcre/snort_literals
+Hyperscan info:    Version: 5.3.0 Features:  Mode: BLOCK
+Expression count:  3,116
+Bytecode size:     923,512 bytes
+Database CRC:      0xf7bc0d1c
+Scratch size:      5,545 bytes
+Compile time:      0.128 seconds
+Peak heap usage:   95,481,856 bytes
+
+Time spent scanning:       4.995 seconds
+Corpus size:               44,954,122 bytes (998,691 blocks)
+Matches per iteration:     148,206 (3.376 matches/kilobyte)
+Overall block rate:        3,998,620.63 blocks/sec
+Mean throughput (overall): 1,439.92 Mbit/sec
+Max throughput (per core): 1,452.21 Mbit/sec
+
+
+\n*** Snort PCREs against HTTP traffic, alexa200 text, streaming mode.\n
+Signatures:        pcre/snort_pcres
+Hyperscan info:    Version: 5.3.0 Features:  Mode: STREAM
+Expression count:  847
+Bytecode size:     1,933,856 bytes
+Database CRC:      0x6c0da73
+Stream state size: 2,947 bytes
+Scratch size:      82,975 bytes
+Compile time:      2.552 seconds
+Peak heap usage:   208,273,408 bytes
+
+Time spent scanning:       111.302 seconds
+Corpus size:               177,087,567 bytes (130,957 blocks in 5,400 streams)
+Matches per iteration:     305,637 (1.767 matches/kilobyte)
+Overall block rate:        23,531.88 blocks/sec
+Mean throughput (overall): 254.57 Mbit/sec
+Max throughput (per core): 416.81 Mbit/sec
+
+
+\n*** Snort PCREs against HTTP traffic, Gutenberg text, streaming mode.\n
+Signatures:        pcre/snort_pcres
+Hyperscan info:    Version: 5.3.0 Features:  Mode: STREAM
+Expression count:  847
+Bytecode size:     1,933,856 bytes
+Database CRC:      0x6c0da73
+Stream state size: 2,947 bytes
+Scratch size:      82,975 bytes
+Compile time:      2.576 seconds
+Peak heap usage:   32,657,408 bytes
+
+Time spent scanning:       4.056 seconds
+Corpus size:               6,701,044 bytes (3,280 blocks in 653 streams)
+Matches per iteration:     26,569 (4.060 matches/kilobyte)
+Overall block rate:        16,172.69 blocks/sec
+Mean throughput (overall): 264.33 Mbit/sec
+Max throughput (per core): 275.10 Mbit/sec
+
+
+\n*** Snort PCREs against HTTP traffic, news text, streaming mode.\n
+Signatures:        pcre/snort_pcres
+Hyperscan info:    Version: 5.3.0 Features:  Mode: STREAM
+Expression count:  847
+Bytecode size:     1,933,856 bytes
+Database CRC:      0x6c0da73
+Stream state size: 2,947 bytes
+Scratch size:      82,975 bytes
+Compile time:      2.501 seconds
+Peak heap usage:   106,168,320 bytes
+
+Time spent scanning:       120.416 seconds
+Corpus size:               44,954,122 bytes (998,691 blocks in 1 streams)
+Matches per iteration:     49,848 (1.135 matches/kilobyte)
+Overall block rate:        165,873.87 blocks/sec
+Mean throughput (overall): 59.73 Mbit/sec
+Max throughput (per core): 59.92 Mbit/sec
+
+
+\n*** Teakettle synthetic patterns against alexa200 text, streaming mode.\n
+Signatures:        pcre/teakettle_2500
+Hyperscan info:    Version: 5.3.0 Features:  Mode: STREAM
+Expression count:  2,500
+Bytecode size:     2,825,856 bytes
+Database CRC:      0x284210ad
+Stream state size: 2,250 bytes
+Scratch size:      154,543 bytes
+Compile time:      2.599 seconds
+Peak heap usage:   207,347,712 bytes
+
+Time spent scanning:       11.768 seconds
+Corpus size:               177,087,567 bytes (130,957 blocks in 5,400 streams)
+Matches per iteration:     38,733 (0.224 matches/kilobyte)
+Overall block rate:        222,563.97 blocks/sec
+Mean throughput (overall): 2,407.71 Mbit/sec
+Max throughput (per core): 2,491.50 Mbit/sec
+
+
+\n*** Teakettle synthetic patterns against Gutenberg text, streaming mode.\n
+Signatures:        pcre/teakettle_2500
+Hyperscan info:    Version: 5.3.0 Features:  Mode: STREAM
+Expression count:  2,500
+Bytecode size:     2,825,856 bytes
+Database CRC:      0x284210ad
+Stream state size: 2,250 bytes
+Scratch size:      154,543 bytes
+Compile time:      2.624 seconds
+Peak heap usage:   31,682,560 bytes
+
+Time spent scanning:       0.809 seconds
+Corpus size:               6,701,044 bytes (3,280 blocks in 653 streams)
+Matches per iteration:     3,779 (0.577 matches/kilobyte)
+Overall block rate:        81,118.58 blocks/sec
+Mean throughput (overall): 1,325.80 Mbit/sec
+Max throughput (per core): 1,327.50 Mbit/sec
+
+
+\n*** Teakettle synthetic patterns against news text, streaming mode.\n
+Signatures:        pcre/teakettle_2500
+Hyperscan info:    Version: 5.3.0 Features:  Mode: STREAM
+Expression count:  2,500
+Bytecode size:     2,825,856 bytes
+Database CRC:      0x284210ad
+Stream state size: 2,250 bytes
+Scratch size:      154,543 bytes
+Compile time:      2.595 seconds
+Peak heap usage:   107,368,448 bytes
+
+Time spent scanning:       280.788 seconds
+Corpus size:               44,954,122 bytes (998,691 blocks in 1 streams)
+Matches per iteration:     22,666 (0.516 matches/kilobyte)
+Overall block rate:        71,134.87 blocks/sec
+Mean throughput (overall): 25.62 Mbit/sec
+Max throughput (per core): 30.80 Mbit/sec

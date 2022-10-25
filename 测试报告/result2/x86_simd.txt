@@ -1,0 +1,187 @@
+*** Snort literals against alexa200 text, block mode.
+
+Signatures:        pcre/snort_literals
+Hyperscan info:    Version: 5.3.0 Features:  Mode: BLOCK
+Expression count:  3116
+Bytecode size:     923512 bytes
+Database CRC:      0xf7bc0d1c
+Scratch size:      5545 bytes
+Compile time:      1.040 seconds
+Peak heap usage:   196390912 bytes
+
+Time spent scanning:       8.660 seconds
+Corpus size:               177087567 bytes (130957 blocks)
+Matches per iteration:     637380 (3.686 matches/kilobyte)
+Overall block rate:        302432.03 blocks/sec
+Mean throughput (overall): 3271.73 Mbit/sec
+Max throughput (per core): 3879.81 Mbit/sec
+
+
+*** Snort literals against Gutenberg text, block mode.
+
+Signatures:        pcre/snort_literals
+Hyperscan info:    Version: 5.3.0 Features:  Mode: BLOCK
+Expression count:  3116
+Bytecode size:     923512 bytes
+Database CRC:      0xf7bc0d1c
+Scratch size:      5545 bytes
+Compile time:      0.170 seconds
+Peak heap usage:   22593536 bytes
+
+Time spent scanning:       0.303 seconds
+Corpus size:               6701044 bytes (3280 blocks)
+Matches per iteration:     4302 (0.657 matches/kilobyte)
+Overall block rate:        216850.18 blocks/sec
+Mean throughput (overall): 3544.20 Mbit/sec
+Max throughput (per core): 4029.79 Mbit/sec
+
+
+
+*** Snort literals against news text, block mode.
+
+Signatures:        pcre/snort_literals
+Hyperscan info:    Version: 5.3.0 Features:  Mode: BLOCK
+Expression count:  3116
+Bytecode size:     923512 bytes
+Database CRC:      0xf7bc0d1c
+Scratch size:      5545 bytes
+Compile time:      0.174 seconds
+Peak heap usage:   72593408 bytes
+
+Time spent scanning:       6.658 seconds
+Corpus size:               44954122 bytes (998691 blocks)
+Matches per iteration:     148206 (3.376 matches/kilobyte)
+Overall block rate:        3000142.84 blocks/sec
+Mean throughput (overall): 1080.36 Mbit/sec
+Max throughput (per core): 1275.71 Mbit/sec
+
+
+
+*** Snort PCREs against HTTP traffic, alexa200 text, streaming mode.
+
+Signatures:        pcre/snort_pcres
+Hyperscan info:    Version: 5.3.0 Features:  Mode: STREAM
+Expression count:  847
+Bytecode size:     1933856 bytes
+Database CRC:      0x6c0da73
+Stream state size: 2947 bytes
+Scratch size:      82975 bytes
+Compile time:      3.551 seconds
+Peak heap usage:   210706432 bytes
+
+Time spent scanning:       70.685 seconds
+Corpus size:               177087567 bytes (130957 blocks in 5400 streams)
+Matches per iteration:     305637 (1.767 matches/kilobyte)
+Overall block rate:        37053.83 blocks/sec
+Mean throughput (overall): 400.85 Mbit/sec
+Max throughput (per core): 478.22 Mbit/sec
+
+
+
+*** Snort PCREs against HTTP traffic, Gutenberg text, streaming mode.
+
+
+Signatures:        pcre/snort_pcres
+Hyperscan info:    Version: 5.3.0 Features:  Mode: STREAM
+Expression count:  847
+Bytecode size:     1933856 bytes
+Database CRC:      0x6c0da73
+Stream state size: 2947 bytes
+Scratch size:      82975 bytes
+Compile time:      2.028 seconds
+Peak heap usage:   32727040 bytes
+
+
+Time spent scanning:       1.492 seconds
+Corpus size:               6701044 bytes (3280 blocks in 653 streams)
+Matches per iteration:     26569 (4.060 matches/kilobyte)
+Overall block rate:        43980.83 blocks/sec
+Mean throughput (overall): 718.82 Mbit/sec
+Max throughput (per core): 727.08 Mbit/sec
+
+
+
+*** Snort PCREs against HTTP traffic, news text, streaming mode.
+
+
+Signatures:        pcre/snort_pcres
+Hyperscan info:    Version: 5.3.0 Features:  Mode: STREAM
+Expression count:  847
+Bytecode size:     1933856 bytes
+Database CRC:      0x6c0da73
+Stream state size: 2947 bytes
+Scratch size:      82975 bytes
+Compile time:      2.013 seconds
+Peak heap usage:   85618688 bytes
+
+
+
+Time spent scanning:       45.578 seconds
+Corpus size:               44954122 bytes (998691 blocks in 1 streams)
+Matches per iteration:     49848 (1.135 matches/kilobyte)
+Overall block rate:        438234.98 blocks/sec
+Mean throughput (overall): 157.81 Mbit/sec
+Max throughput (per core): 183.70 Mbit/sec
+
+
+
+*** Teakettle synthetic patterns against alexa200 text, streaming mode.
+
+Signatures:        pcre/teakettle_2500
+Hyperscan info:    Version: 5.3.0 Features:  Mode: STREAM
+Expression count:  2500
+Bytecode size:     2825856 bytes
+Database CRC:      0x284210ad
+Stream state size: 2250 bytes
+Scratch size:      154543 bytes
+Compile time:      2.297 seconds
+Peak heap usage:   211369984 bytes
+
+Time spent scanning:       6.015 seconds
+Corpus size:               177087567 bytes (130957 blocks in 5400 streams)
+Matches per iteration:     38733 (0.224 matches/kilobyte)
+Overall block rate:        435462.40 blocks/sec
+Mean throughput (overall): 4710.86 Mbit/sec
+Max throughput (per core): 5290.99 Mbit/sec
+
+
+
+*** Teakettle synthetic patterns against Gutenberg text, streaming mode.
+
+Signatures:        pcre/teakettle_2500
+Hyperscan info:    Version: 5.3.0 Features:  Mode: STREAM
+Expression count:  2500
+Bytecode size:     2825856 bytes
+Database CRC:      0x284210ad
+Stream state size: 2250 bytes
+Scratch size:      154543 bytes
+Compile time:      2.332 seconds
+Peak heap usage:   34119680 bytes
+
+Time spent scanning:       0.436 seconds
+Corpus size:               6701044 bytes (3280 blocks in 653 streams)
+Matches per iteration:     3779 (0.577 matches/kilobyte)
+Overall block rate:        150602.41 blocks/sec
+Mean throughput (overall): 2461.45 Mbit/sec
+Max throughput (per core): 2633.67 Mbit/sec
+
+
+
+*** Teakettle synthetic patterns against news text, streaming mode.
+
+Signatures:        pcre/teakettle_2500
+Hyperscan info:    Version: 5.3.0 Features:  Mode: STREAM
+Expression count:  2500
+Bytecode size:     2825856 bytes
+Database CRC:      0x284210ad
+Stream state size: 2250 bytes
+Scratch size:      154543 bytes
+Compile time:      2.205 seconds
+Peak heap usage:   87801856 bytes
+
+Time spent scanning:       113.284 seconds
+Corpus size:               44954122 bytes (998691 blocks in 1 streams)
+Matches per iteration:     22666 (0.516 matches/kilobyte)
+Overall block rate:        176316.91 blocks/sec
+Mean throughput (overall): 63.49 Mbit/sec
+Max throughput (per core): 65.87 Mbit/sec
